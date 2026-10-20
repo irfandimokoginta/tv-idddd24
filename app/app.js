@@ -164,16 +164,55 @@
     });
   }
 
+  // Jika modul dipasang sebagai GitHub Module, TizenBrew menyajikannya dari
+  // .../module/gh%2F<user>%2F<repo>/... lewat jsDelivr (cache bisa berjam-jam).
+  // Playlist lokal modul lalu diambil langsung dari raw.githubusercontent.com
+  // (cache ±5 menit) agar perubahan playlist cepat terlihat; jsDelivr jadi cadangan.
+  function githubRepo() {
+    try {
+      var m = decodeURIComponent(location.pathname).match(/\/module\/gh\/([^\/]+)\/([^\/@]+)/);
+      return m ? { user: m[1], repo: m[2] } : null;
+    } catch (e) { return null; }
+  }
+
+  function sourcesFor(entry) {
+    if (/^https?:\/\//i.test(entry)) return [{ url: entry, label: 'internet' }];
+    var list = [];
+    var gh = githubRepo();
+    if (gh) {
+      list.push({
+        url: 'https://raw.githubusercontent.com/' + gh.user + '/' + gh.repo + '/HEAD/app/' + entry + '?t=' + Date.now(),
+        label: 'GitHub'
+      });
+    }
+    list.push({ url: entry, label: 'jsDelivr' });
+    return list;
+  }
+
+  // Coba sumber satu per satu; pakai yang pertama berhasil.
+  function fetchFirst(sources, i) {
+    i = i || 0;
+    if (i >= sources.length) return Promise.resolve(null);
+    return fetchText(sources[i].url).then(function (t) {
+      if (t.indexOf('#EXTINF') === -1) throw new Error('bukan playlist');
+      return { text: t, label: sources[i].label };
+    }, function () { return null; }).then(function (res) {
+      return res || fetchFirst(sources, i + 1);
+    }, function () { return fetchFirst(sources, i + 1); });
+  }
+
+  var sourceLabel = '';
+
   function loadPlaylists() {
     subtitleEl.textContent = 'Memuat daftar channel…';
     showMessage('Memuat daftar channel…', true);
 
-    var jobs = CONFIG.playlists.map(function (u) {
-      return fetchText(u).then(function (t) { return t; }, function () { return null; });
-    });
+    var jobs = CONFIG.playlists.map(function (u) { return fetchFirst(sourcesFor(u)); });
 
-    return Promise.all(jobs).then(function (texts) {
-      var fresh = texts.filter(function (t) { return t; });
+    return Promise.all(jobs).then(function (results) {
+      var ok = results.filter(function (r) { return r; });
+      var fresh = ok.map(function (r) { return r.text; });
+      sourceLabel = ok.length ? ok.map(function (r) { return r.label; }).join(', ') : 'tersimpan';
       var fromCache = false;
       if (fresh.length) {
         store.set('tvid.cache', fresh);
@@ -248,7 +287,7 @@
     }
     var label = (favOnly ? 'Favorit' : 'Semua channel') + (cat ? ' · ' + cat.label : '');
     filterEl.textContent = label;
-    subtitleEl.textContent = view.length + ' channel' +
+    subtitleEl.textContent = view.length + ' channel' + (sourceLabel ? ' · sumber: ' + sourceLabel : '') +
       (favOnly && !view.length ? ' — tekan ► pada channel untuk menambah favorit' : '');
     render();
   }
