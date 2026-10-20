@@ -1,0 +1,417 @@
+#EXTM3U
+# Playlist TV Indonesia — hanya server resmi stasiun / hosting stasiun lokal.
+# Baris dengan nama sama = cadangan; aplikasi mencoba berurutan.
+#EXTINF:-1 tvg-id="TVRI.id@HD" tvg-logo="https://i.imgur.com/bD2odoR.png" group-title="Nasional",TVRI Nasional
+https://ott-balancer.tvri.go.id/live/eds/Nasional/hls/Nasional.m3u8
+#EXTINF:-1 tvg-id="TVRI.id@HD" tvg-logo="https://i.imgur.com/bD2odoR.png" group-title="Nasional",TVRI Nasional
+http://ott.tvri.co.id/Content/HLS/Live/Channel(TVRINasional)/index.m3u8
+#EXTINF:-1 tvg-logo="https://i.imgur.com/bD2odoR.png" group-title="Nasional",TVRI Sport
+http://ott.tvri.co.id/Content/HLS/Live/Channel(TVRI4)/index.m3u8
+#EXTINF:-1 tvg-id="TVRIWorld.id@SD" group-title="Nasional",TVRI World
+https://ott-balancer.tvri.go.id/live/eds/TVRIWorld/hls/TVRIWorld.m3u8
+#EXTINF:-1 tvg-id="RRINet.id@SD" group-title="Nasional",RRI Net
+https://private-streaming.rri.go.id/memfs/6f77c7b5-feb2-4935-9f89-e7e9fca0a54a_output_0.m3u8
+#EXTINF:-1 tvg-id="DAAITV.id@SD" group-title="Nasional",DAAI TV
+https://pull.daaiplus.com/live-DAAIPLUS/live-DAAIPLUS_HD.m3u8
+#EXTINF:-1 tvg-id="DMITV.id@SD" group-title="Nasional",DMI TV
+https://tvstreamcast.com/tawaftv.m3u8
+#EXTINF:-1 tvg-id="MagnaChannel.id@SD" group-title="Nasional",Magna Channel (tidak 24 jam)
+https://edge.medcom.id/live-edge/smil:magna.smil/playlist.m3u8
+#EXTINF:-1 tvg-id="RajawaliTV.id@SD" group-title="Nasional",Rajawali TV
+https://rtvstream.rtv.co.id:4555/hls/rtv.m3u8
+#EXTINF:-1 tvg-id="TVRParlemen.id@SD" group-title="Nasional",TVR Parlemen (tidak 24 jam)
+https://ssv1.dpr.go.id/golive/livestream/playlist.m3u8
+#EXTINF:-1 tvg-id="BeritaSatu.id@SD" tvg-logo="https://imgur.com/vYJVT07" group-title="Berita",BeritaSatu
+https://b1news.beritasatumedia.com/Beritasatu/B1News_1280x720.m3u8
+#EXTINF:-1 tvg-id="BeritaSatu.id@SD" tvg-logo="https://imgur.com/vYJVT07" group-title="Berita",BeritaSatu
+#EXTVLCOPT:http-referrer=https://www.beritasatu.com/beritasatu-live-streaming
+https://xtdslboppkkv-pull.bpmedialive.com/live/beritasatu/abr.m3u8
+#EXTINF:-1 tvg-id="CNBCIndonesia.id@SD" tvg-logo="https://cdn.cnbcindonesia.com/cnbc/images/logo_hitam.png?w=650" group-title="Berita",CNBC Indonesia
+https://live.cnbcindonesia.com/livecnbc/smil:cnbctv.smil/chunklist.m3u8
+#EXTINF:-1 tvg-id="CNBCIndonesia.id@SD" tvg-logo="https://cdn.cnbcindonesia.com/cnbc/images/logo_hitam.png?w=650" group-title="Berita",CNBC Indonesia
+https://live.cnbcindonesia.com/livecnbc/smil:cnbctv.smil/playlist.m3u8
+#EXTINF:-1 tvg-id="CNBCIndonesia.id@SD" tvg-logo="https://cdn.cnbcindonesia.com/cnbc/images/logo_hitam.png?w=650" group-title="Berita",CNBC Indonesia
+http://live.cnbcindonesia.com/livecnbc/smil:cnbctv.smil/chunklist_w528900641_b384000_sleng.m3u8
+#EXTINF:-1 tvg-id="CNBCIndonesia.id@SD" tvg-logo="https://cdn.cnbcindonesia.com/cnbc/images/logo_hitam.png?w=650" group-title="Berita",CNBC Indonesia
+http://live.cnbcindonesia.com/livecnbc/smil:cnbctv.smil/master.m3u8
+#EXTINF:-1 tvg-id="CNBCIndonesia.id@SD" tvg-logo="https://cdn.cnbcindonesia.com/cnbc/images/logo_hitam.png?w=650" group-title="Berita",CNBC Indonesia
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/156.0.0.0 Safari/537.36
+https://video.detik.com/livecnbc/smil:cnbctv/chunklist_w1279679883_b384000_sleng.m3u8
+#EXTINF:-1 tvg-id="CNNIndonesia.id@SD" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/6/66/CNN_International_logo.svg/1200px-CNN_International_logo.svg.png" group-title="Berita",CNN Indonesia
+http://live.cnnindonesia.com/livecnn/smil:cnntv.smil/chunklist_b384000_sleng.m3u8
+#EXTINF:-1 tvg-id="CNNIndonesia.id@SD" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/6/66/CNN_International_logo.svg/1200px-CNN_International_logo.svg.png" group-title="Berita",CNN Indonesia
+http://live.cnnindonesia.com/livecnn/smil:cnntv.smil/playlist.m3u8
+#EXTINF:-1 tvg-id="CNNIndonesia.id@SD" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/6/66/CNN_International_logo.svg/1200px-CNN_International_logo.svg.png" group-title="Berita",CNN Indonesia
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/156.0.0.0 Safari/537.36
+https://video.detik.com/livecnn/smil:cnntv/chunklist_w268557525_b384000_sleng.m3u8
+#EXTINF:-1 group-title="Berita",IDTV (tidak 24 jam)
+https://b1world.beritasatumedia.com/Beritasatu/B1World_manifest.m3u8
+#EXTINF:-1 tvg-id="MetroGlobeNetwork.id" tvg-logo="https://i.imgur.com/aiiinzg.png" group-title="Berita",Metro Globe Network
+https://edge.medcom.id/live-edge/smil:mgnch.smil/playlist.m3u8
+#EXTINF:-1 tvg-id="MetroTV.id@SD" tvg-logo="https://thumbor.prod.vidiocdn.com/CN732k1UkV-MWtonPwmlMzDE-gY=/filters:quality(70)/vidio-web-prod-livestreaming/uploads/livestreaming/image/777/metro-tv-461c64.jpg" group-title="Berita",Metro TV
+https://edge.medcom.id/live-edge/smil:metro.smil/playlist.m3u8
+#EXTINF:-1 tvg-id="MetroTV.id@SD" tvg-logo="https://thumbor.prod.vidiocdn.com/CN732k1UkV-MWtonPwmlMzDE-gY=/filters:quality(70)/vidio-web-prod-livestreaming/uploads/livestreaming/image/777/metro-tv-461c64.jpg" group-title="Berita",Metro TV
+http://edge.metrotvnews.com:1935/live-edge/smil:metro.smil/chunklist_w2006790992_b1492000_sleng.m3u8
+#EXTINF:-1 tvg-id="TVRI.id@NorthSulawesi" tvg-logo="https://i.imgur.com/bD2odoR.png" group-title="TVRI Daerah",TVRI Sulawesi Utara
+https://ott-balancer.tvri.go.id/live/eds/Sulut/hls/Sulut.m3u8
+#EXTINF:-1 tvg-id="TVRI.id@NorthSulawesi" tvg-logo="https://i.imgur.com/bD2odoR.png" group-title="TVRI Daerah",TVRI Sulawesi Utara
+http://ott.tvri.co.id/Content/HLS/Live/Channel(TVRISulutmanado)/index.m3u8
+#EXTINF:-1 tvg-id="TVRI.id@Aceh" tvg-logo="https://i.imgur.com/bD2odoR.png" group-title="TVRI Daerah",TVRI Aceh
+https://ott-balancer.tvri.go.id/live/eds/Aceh/hls/Aceh.m3u8
+#EXTINF:-1 tvg-id="TVRI.id@Aceh" tvg-logo="https://i.imgur.com/bD2odoR.png" group-title="TVRI Daerah",TVRI Aceh
+http://ott.tvri.co.id/Content/HLS/Live/Channel(TVRIAceh)/index.m3u8
+#EXTINF:-1 tvg-id="TVRI.id@Bali" tvg-logo="https://i.imgur.com/bD2odoR.png" group-title="TVRI Daerah",TVRI Bali
+https://ott-balancer.tvri.go.id/live/eds/Bali/hls/Bali.m3u8
+#EXTINF:-1 tvg-id="TVRI.id@Bali" tvg-logo="https://i.imgur.com/bD2odoR.png" group-title="TVRI Daerah",TVRI Bali
+http://ott.tvri.co.id/Content/HLS/Live/Channel(TVRIBali)/index.m3u8
+#EXTINF:-1 tvg-id="TVRI.id@BangkaBelitung" tvg-logo="https://i.imgur.com/bD2odoR.png" group-title="TVRI Daerah",TVRI Bangka Belitung
+https://ott-balancer.tvri.go.id/live/eds/Babel/hls/Babel.m3u8
+#EXTINF:-1 tvg-id="TVRI.id@BangkaBelitung" tvg-logo="https://i.imgur.com/bD2odoR.png" group-title="TVRI Daerah",TVRI Bangka Belitung
+http://ott.tvri.co.id/Content/HLS/Live/Channel(TVRIBabel)/index.m3u8
+#EXTINF:-1 tvg-id="TVRI.id@Bengkulu" tvg-logo="https://i.imgur.com/bD2odoR.png" group-title="TVRI Daerah",TVRI Bengkulu
+https://ott-balancer.tvri.go.id/live/eds/Bengkulu/hls/Bengkulu.m3u8
+#EXTINF:-1 tvg-id="TVRI.id@Bengkulu" tvg-logo="https://i.imgur.com/bD2odoR.png" group-title="TVRI Daerah",TVRI Bengkulu
+http://ott.tvri.co.id/Content/HLS/Live/Channel(TVRIBengkulu)/index.m3u8
+#EXTINF:-1 tvg-id="TVRI.id@Gorontalo" tvg-logo="https://i.imgur.com/bD2odoR.png" group-title="TVRI Daerah",TVRI Gorontalo
+https://ott-balancer.tvri.go.id/live/eds/Gorontalo/hls/Gorontalo.m3u8
+#EXTINF:-1 tvg-id="TVRI.id@Gorontalo" tvg-logo="https://i.imgur.com/bD2odoR.png" group-title="TVRI Daerah",TVRI Gorontalo
+http://ott.tvri.co.id/Content/HLS/Live/Channel(TVRIGorontalo)/index.m3u8
+#EXTINF:-1 tvg-id="TVRI.id@Jakarta" tvg-logo="https://i.imgur.com/bD2odoR.png" group-title="TVRI Daerah",TVRI Jakarta (tidak 24 jam)
+https://ott-balancer.tvri.go.id/live/eds/DKI/hls/DKI.m3u8
+#EXTINF:-1 tvg-id="TVRI.id@Jakarta" tvg-logo="https://i.imgur.com/bD2odoR.png" group-title="TVRI Daerah",TVRI Jakarta (tidak 24 jam)
+http://ott.tvri.co.id/Content/HLS/Live/Channel(TVRIDki)/index.m3u8
+#EXTINF:-1 tvg-id="TVRI.id@Jambi" tvg-logo="https://i.imgur.com/bD2odoR.png" group-title="TVRI Daerah",TVRI Jambi (tidak 24 jam)
+https://ott-balancer.tvri.go.id/live/eds/Jambi/hls/Jambi.m3u8
+#EXTINF:-1 tvg-id="TVRI.id@Jambi" tvg-logo="https://i.imgur.com/bD2odoR.png" group-title="TVRI Daerah",TVRI Jambi (tidak 24 jam)
+http://ott.tvri.co.id/Content/HLS/Live/Channel(TVRIJambi)/index.m3u8
+#EXTINF:-1 tvg-id="TVRI.id@WestJava" tvg-logo="https://i.imgur.com/bD2odoR.png" group-title="TVRI Daerah",TVRI Jawa Barat
+https://ott-balancer.tvri.go.id/live/eds/Jabar/hls/Jabar.m3u8
+#EXTINF:-1 tvg-id="TVRI.id@WestJava" tvg-logo="https://i.imgur.com/bD2odoR.png" group-title="TVRI Daerah",TVRI Jawa Barat
+http://ott.tvri.co.id/Content/HLS/Live/Channel(TVRIJabarbandung)/index.m3u8
+#EXTINF:-1 tvg-id="TVRI.id@CentralJava" tvg-logo="https://i.imgur.com/bD2odoR.png" group-title="TVRI Daerah",TVRI Jawa Tengah
+https://ott-balancer.tvri.go.id/live/eds/Jateng/hls/Jateng.m3u8
+#EXTINF:-1 tvg-id="TVRI.id@CentralJava" tvg-logo="https://i.imgur.com/bD2odoR.png" group-title="TVRI Daerah",TVRI Jawa Tengah
+http://ott.tvri.co.id/Content/HLS/Live/Channel(TVRIJatengsemarang)/index.m3u8
+#EXTINF:-1 tvg-id="TVRI.id@EastJava" tvg-logo="https://i.imgur.com/bD2odoR.png" group-title="TVRI Daerah",TVRI Jawa Timur
+https://ott-balancer.tvri.go.id/live/eds/Jatim/hls/Jatim.m3u8
+#EXTINF:-1 tvg-id="TVRI.id@EastJava" tvg-logo="https://i.imgur.com/bD2odoR.png" group-title="TVRI Daerah",TVRI Jawa Timur
+http://ott.tvri.co.id/Content/HLS/Live/Channel(TVRIJatimsurabaya)/index.m3u8
+#EXTINF:-1 tvg-id="TVRI.id@WestKalimantan" tvg-logo="https://i.imgur.com/bD2odoR.png" group-title="TVRI Daerah",TVRI Kalimantan Barat
+https://ott-balancer.tvri.go.id/live/eds/Kalbar/hls/Kalbar.m3u8
+#EXTINF:-1 tvg-id="TVRI.id@WestKalimantan" tvg-logo="https://i.imgur.com/bD2odoR.png" group-title="TVRI Daerah",TVRI Kalimantan Barat
+http://ott.tvri.co.id/Content/HLS/Live/Channel(TVRIKalbar)/index.m3u8
+#EXTINF:-1 tvg-id="TVRI.id@SouthKalimantan" tvg-logo="https://i.imgur.com/bD2odoR.png" group-title="TVRI Daerah",TVRI Kalimantan Selatan
+https://ott-balancer.tvri.go.id/live/eds/Kalsel/hls/Kalsel.m3u8
+#EXTINF:-1 tvg-id="TVRI.id@SouthKalimantan" tvg-logo="https://i.imgur.com/bD2odoR.png" group-title="TVRI Daerah",TVRI Kalimantan Selatan
+http://ott.tvri.co.id/Content/HLS/Live/Channel(TVRIKalselbanjarmsn)/index.m3u8
+#EXTINF:-1 tvg-id="TVRI.id@CentralKalimantan" tvg-logo="https://i.imgur.com/bD2odoR.png" group-title="TVRI Daerah",TVRI Kalimantan Tengah
+https://ott-balancer.tvri.go.id/live/eds/Kalteng/hls/Kalteng.m3u8
+#EXTINF:-1 tvg-id="TVRI.id@CentralKalimantan" tvg-logo="https://i.imgur.com/bD2odoR.png" group-title="TVRI Daerah",TVRI Kalimantan Tengah
+http://ott.tvri.co.id/Content/HLS/Live/Channel(TVRIKalteng)/index.m3u8
+#EXTINF:-1 tvg-id="TVRI.id@EastKalimantan" tvg-logo="https://i.imgur.com/bD2odoR.png" group-title="TVRI Daerah",TVRI Kalimantan Timur
+https://ott-balancer.tvri.go.id/live/eds/Kaltim/hls/Kaltim.m3u8
+#EXTINF:-1 tvg-id="TVRI.id@EastKalimantan" tvg-logo="https://i.imgur.com/bD2odoR.png" group-title="TVRI Daerah",TVRI Kalimantan Timur
+http://ott.tvri.co.id/Content/HLS/Live/Channel(TVRIKaltimsamarinda)/index.m3u8
+#EXTINF:-1 tvg-id="TVRI.id@Lampung" tvg-logo="https://i.imgur.com/bD2odoR.png" group-title="TVRI Daerah",TVRI Lampung
+https://ott-balancer.tvri.go.id/live/eds/Lampung/hls/Lampung.m3u8
+#EXTINF:-1 tvg-id="TVRI.id@Lampung" tvg-logo="https://i.imgur.com/bD2odoR.png" group-title="TVRI Daerah",TVRI Lampung
+http://ott.tvri.co.id/Content/HLS/Live/Channel(TVRILampung)/index.m3u8
+#EXTINF:-1 tvg-id="TVRI.id@Maluku" tvg-logo="https://i.imgur.com/bD2odoR.png" group-title="TVRI Daerah",TVRI Maluku
+https://ott-balancer.tvri.go.id/live/eds/Ambon/hls/Ambon.m3u8
+#EXTINF:-1 tvg-id="TVRI.id@Maluku" tvg-logo="https://i.imgur.com/bD2odoR.png" group-title="TVRI Daerah",TVRI Maluku
+http://ott.tvri.co.id/Content/HLS/Live/Channel(TVRIMalukuambon)/index.m3u8
+#EXTINF:-1 tvg-id="TVRI.id@WestNusaTenggara" tvg-logo="https://i.imgur.com/bD2odoR.png" group-title="TVRI Daerah",TVRI Nusa Tenggara Barat
+https://ott-balancer.tvri.go.id/live/eds/NTB/hls/NTB.m3u8
+#EXTINF:-1 tvg-id="TVRI.id@WestNusaTenggara" tvg-logo="https://i.imgur.com/bD2odoR.png" group-title="TVRI Daerah",TVRI Nusa Tenggara Barat
+http://ott.tvri.co.id/Content/HLS/Live/Channel(TVRINtbmataram)/index.m3u8
+#EXTINF:-1 tvg-id="TVRI.id@EastNusaTenggara" tvg-logo="https://i.imgur.com/bD2odoR.png" group-title="TVRI Daerah",TVRI Nusa Tenggara Timur
+https://ott-balancer.tvri.go.id/live/eds/NTT/hls/NTT.m3u8
+#EXTINF:-1 tvg-id="TVRI.id@EastNusaTenggara" tvg-logo="https://i.imgur.com/bD2odoR.png" group-title="TVRI Daerah",TVRI Nusa Tenggara Timur
+http://ott.tvri.co.id/Content/HLS/Live/Channel(TVRINttkupang)/index.m3u8
+#EXTINF:-1 tvg-id="TVRI.id@Papua" tvg-logo="https://i.imgur.com/bD2odoR.png" group-title="TVRI Daerah",TVRI Papua
+https://ott-balancer.tvri.go.id/live/eds/Papua/hls/Papua.m3u8
+#EXTINF:-1 tvg-id="TVRI.id@Papua" tvg-logo="https://i.imgur.com/bD2odoR.png" group-title="TVRI Daerah",TVRI Papua
+http://ott.tvri.co.id/Content/HLS/Live/Channel(TVRIPapua)/index.m3u8
+#EXTINF:-1 tvg-id="TVRI.id@WestPapua" group-title="TVRI Daerah",TVRI Papua Barat
+https://ott-balancer.tvri.go.id/live/eds/Pabar/hls/Pabar.m3u8
+#EXTINF:-1 tvg-id="TVRI.id@Riau" tvg-logo="https://i.imgur.com/bD2odoR.png" group-title="TVRI Daerah",TVRI Riau (tidak 24 jam)
+https://ott-balancer.tvri.go.id/live/eds/Riau/hls/Riau.m3u8
+#EXTINF:-1 tvg-id="TVRI.id@Riau" tvg-logo="https://i.imgur.com/bD2odoR.png" group-title="TVRI Daerah",TVRI Riau (tidak 24 jam)
+http://ott.tvri.co.id/Content/HLS/Live/Channel(TVRIRiau)/index.m3u8
+#EXTINF:-1 tvg-id="TVRI.id@WestSulawesi" tvg-logo="https://i.imgur.com/bD2odoR.png" group-title="TVRI Daerah",TVRI Sulawesi Barat
+https://ott-balancer.tvri.go.id/live/eds/Sulbar/hls/Sulbar.m3u8
+#EXTINF:-1 tvg-id="TVRI.id@WestSulawesi" tvg-logo="https://i.imgur.com/bD2odoR.png" group-title="TVRI Daerah",TVRI Sulawesi Barat
+http://ott.tvri.co.id/Content/HLS/Live/Channel(TVRISulbarmajene)/index.m3u8
+#EXTINF:-1 tvg-id="TVRI.id@SouthSulawesi" tvg-logo="https://i.imgur.com/bD2odoR.png" group-title="TVRI Daerah",TVRI Sulawesi Selatan
+https://ott-balancer.tvri.go.id/live/eds/Sulsel/hls/Sulsel.m3u8
+#EXTINF:-1 tvg-id="TVRI.id@SouthSulawesi" tvg-logo="https://i.imgur.com/bD2odoR.png" group-title="TVRI Daerah",TVRI Sulawesi Selatan
+http://ott.tvri.co.id/Content/HLS/Live/Channel(TVRISulselmakasar)/index.m3u8
+#EXTINF:-1 tvg-id="TVRI.id@CentralSulawesi" tvg-logo="https://i.imgur.com/bD2odoR.png" group-title="TVRI Daerah",TVRI Sulawesi Tengah
+https://ott-balancer.tvri.go.id/live/eds/Sulteng/hls/Sulteng.m3u8
+#EXTINF:-1 tvg-id="TVRI.id@CentralSulawesi" tvg-logo="https://i.imgur.com/bD2odoR.png" group-title="TVRI Daerah",TVRI Sulawesi Tengah
+http://ott.tvri.co.id/Content/HLS/Live/Channel(TVRISultengpalu)/index.m3u8
+#EXTINF:-1 tvg-id="TVRI.id@SoutheastSulawesi" tvg-logo="https://i.imgur.com/bD2odoR.png" group-title="TVRI Daerah",TVRI Sulawesi Tenggara
+https://ott-balancer.tvri.go.id/live/eds/Sultra/hls/Sultra.m3u8
+#EXTINF:-1 tvg-id="TVRI.id@SoutheastSulawesi" tvg-logo="https://i.imgur.com/bD2odoR.png" group-title="TVRI Daerah",TVRI Sulawesi Tenggara
+http://ott.tvri.co.id/Content/HLS/Live/Channel(TVRISultra)/index.m3u8
+#EXTINF:-1 tvg-id="TVRI.id@WestSumatra" tvg-logo="https://i.imgur.com/bD2odoR.png" group-title="TVRI Daerah",TVRI Sumatera Barat
+https://ott-balancer.tvri.go.id/live/eds/Sumbar/hls/Sumbar.m3u8
+#EXTINF:-1 tvg-id="TVRI.id@WestSumatra" tvg-logo="https://i.imgur.com/bD2odoR.png" group-title="TVRI Daerah",TVRI Sumatera Barat
+http://ott.tvri.co.id/Content/HLS/Live/Channel(TVRISumbarpadang)/index.m3u8
+#EXTINF:-1 tvg-id="TVRI.id@SouthSumatra" tvg-logo="https://i.imgur.com/bD2odoR.png" group-title="TVRI Daerah",TVRI Sumatera Selatan
+https://ott-balancer.tvri.go.id/live/eds/Sumsel/hls/Sumsel.m3u8
+#EXTINF:-1 tvg-id="TVRI.id@SouthSumatra" tvg-logo="https://i.imgur.com/bD2odoR.png" group-title="TVRI Daerah",TVRI Sumatera Selatan
+http://ott.tvri.co.id/Content/HLS/Live/Channel(TVRISumsel)/index.m3u8
+#EXTINF:-1 tvg-id="TVRI.id@NorthSumatra" tvg-logo="https://i.imgur.com/bD2odoR.png" group-title="TVRI Daerah",TVRI Sumatera Utara
+https://ott-balancer.tvri.go.id/live/eds/Sumut/hls/Sumut.m3u8
+#EXTINF:-1 tvg-id="TVRI.id@NorthSumatra" tvg-logo="https://i.imgur.com/bD2odoR.png" group-title="TVRI Daerah",TVRI Sumatera Utara
+http://ott.tvri.co.id/Content/HLS/Live/Channel(TVRISumutmedan)/index.m3u8
+#EXTINF:-1 tvg-id="TVRI.id@Yogyakarta" tvg-logo="https://i.imgur.com/bD2odoR.png" group-title="TVRI Daerah",TVRI Yogyakarta
+https://ott-balancer.tvri.go.id/live/eds/Jogjakarta/hls/Jogjakarta.m3u8
+#EXTINF:-1 tvg-id="TVRI.id@Yogyakarta" tvg-logo="https://i.imgur.com/bD2odoR.png" group-title="TVRI Daerah",TVRI Yogyakarta
+http://ott.tvri.co.id/Content/HLS/Live/Channel(TVRIYogyakarta)/index.m3u8
+#EXTINF:-1 tvg-id="AlImanTV.id@SD" group-title="Religi",Al-Iman TV
+https://tv.aliman.id/aliman/live.m3u8
+#EXTINF:-1 tvg-id="MGITV.id@SD" group-title="Religi",MGI TV
+https://tv.rodja.live/tasik/ngrp:mgitv_all/playlist.m3u8
+#EXTINF:-1 tvg-id="NaajiyaTV.id@SD" group-title="Religi",Naajiya TV
+#EXTVLCOPT:http-referrer=https://www.naajiyatv.com/tonton
+https://www.naajiyatv.com/live/livestream.m3u8
+#EXTINF:-1 tvg-id="RodjaTV.id@SD" group-title="Religi",Rodja TV
+https://rodjatv.com/rodjatv/live.m3u8
+#EXTINF:-1 tvg-id="SalamTV.id@SD" group-title="Religi",Salam TV
+#EXTVLCOPT:http-referrer=salamtelevisi.com
+https://live.salamtelevisi.com/hls/0/stream.m3u8
+#EXTINF:-1 tvg-id="IndonesianaTV.id@SD" group-title="Edukasi",Indonesiana.TV
+#EXTVLCOPT:http-referrer=https://indonesiana.tv/
+https://tvstreamcast.com/indonesiana.m3u8
+#EXTINF:-1 tvg-id="TVKU.id@SD" group-title="Edukasi",TVKU
+https://tvku.tv/hlsstream/hls/live.m3u8
+#EXTINF:-1 tvg-id="UGTV.id@SD" group-title="Edukasi",UGTV
+https://cdn.gunadarma.ac.id/streams/ugtv/ingestugtv.m3u8
+#EXTINF:-1 tvg-id="KawanuaTV.id@SD" group-title="TV Lokal",Kawanua TV
+http://122.248.43.242:1935/KAWANUATV/_definst_/myStream/playlist.m3u8
+#EXTINF:-1 tvg-id="CelebesTV.id@SD" group-title="TV Lokal",Celebes TV (tidak 24 jam)
+https://ams.juraganstreaming.com:5443/LiveApp/streams/celebesmedia.m3u8
+#EXTINF:-1 tvg-id="AFBTVKupang.id@SD" group-title="TV Lokal",AFBTV Kupang (tidak 24 jam)
+#EXTVLCOPT:http-referrer=https://afbtvkupang.com/
+https://afbtv.siar.us/live/afbtv.m3u8
+#EXTINF:-1 tvg-id="AhsanTV.id@SD" group-title="TV Lokal",Ahsan TV
+https://5bf7b725107e5.streamlock.net/ahsantv/ahsantv/playlist.m3u8
+#EXTINF:-1 tvg-id="AKTV.id@SD" group-title="TV Lokal",AKTV (tidak 24 jam)
+#EXTVLCOPT:http-referrer=https://aktvuhfdigital.tv/Livestream/aktv
+https://akativi.siar.us/live/akativi.m3u8
+#EXTINF:-1 tvg-id="AlWafaTarim.id@SD" group-title="TV Lokal",Alwafa Tarim TV (Am Media)
+https://ammedia.siar.us/ammedia/live/playlist.m3u8
+#EXTINF:-1 tvg-id="AshiilTV.id@SD" group-title="TV Lokal",Ashiil TV (tidak 24 jam)
+#EXTVLCOPT:http-referrer=https://ashiil.tv/
+https://5bf7b725107e5.streamlock.net/ashiiltv/ashiiltv/playlist.m3u8
+#EXTINF:-1 tvg-id="AstroBlitarTV.id@SD" group-title="TV Lokal",Astro Blitar TV
+#EXTVLCOPT:http-referrer=https://abtelevisi.com/
+https://5bf7b725107e5.streamlock.net/abtv/abtv/playlist.m3u8
+#EXTINF:-1 tvg-id="AtambuaTV.id@HD" group-title="TV Lokal",Atambua TV
+http://122.248.43.242:1935/ATAMBUATV/_definst_/myStream/playlist.m3u8
+#EXTINF:-1 tvg-id="BalikpapanTV.id@SD" group-title="TV Lokal",Balikpapan TV
+http://122.248.43.242:1935/BALIKPAPANTV/_definst_/myStream/playlist.m3u8
+#EXTINF:-1 tvg-id="BanjarTV.id@SD" group-title="TV Lokal",Banjar TV (tidak 24 jam)
+https://banjartv.siar.us/banjartv/live/playlist.m3u8
+#EXTINF:-1 tvg-id="BantenTV.id@SD" group-title="TV Lokal",Banten TV (tidak 24 jam)
+https://5bf7b725107e5.streamlock.net/bantentv/bantentv/playlist.m3u8
+#EXTINF:-1 tvg-id="BMSTV.id@SD" group-title="TV Lokal",Banyumas TV (tidak 24 jam)
+https://5bf7b725107e5.streamlock.net/bmstv/bmstv/playlist.m3u8
+#EXTINF:-1 tvg-id="BatamTV.id@SD" group-title="TV Lokal",Batam TV (tidak 24 jam)
+http://122.248.43.242:1935/BATAMTV/_definst_/myStream/playlist.m3u8
+#EXTINF:-1 tvg-id="BatamTV.id@SD" group-title="TV Lokal",Batam TV (tidak 24 jam)
+http://122.248.43.138:1935/ch5/myStream/playlist.m3u8
+#EXTINF:-1 tvg-id="BRTV.id@SD" group-title="TV Lokal",BRTV
+https://5bf7b725107e5.streamlock.net/brtv/brtv/playlist.m3u8
+#EXTINF:-1 tvg-id="BungoTV.id@SD" group-title="TV Lokal",Bungo TV (tidak 24 jam)
+https://5bf7b725107e5.streamlock.net/bungotv/bungotv/playlist.m3u8
+#EXTINF:-1 tvg-id="CarubanTV.id@HD" group-title="TV Lokal",Caruban TV
+#EXTVLCOPT:http-referrer=https://stream.carubantv.id
+https://stream.carubantv.id/hls/0/stream.m3u8
+#EXTINF:-1 group-title="TV Lokal",Citra TV
+http://122.248.43.138:1935/ch28/myStream/playlist.m3u8
+#EXTINF:-1 tvg-id="DavikaTV.id@SD" group-title="TV Lokal",Davika TV
+#EXTVLCOPT:http-referrer=https://davikatv.co/livestreaming/
+https://5bf7b725107e5.streamlock.net/davika/davika/playlist.m3u8
+#EXTINF:-1 tvg-id="DhammaTV.id@SD" group-title="TV Lokal",Dhamma TV (tidak 24 jam)
+https://b.webcache.maxindo.net.id/dhamma/dhamma.m3u8
+#EXTINF:-1 tvg-id="DhohoTV.id@SD" group-title="TV Lokal",Dhoho TV
+https://dhohotv.siar.us/dhohotv/live/playlist.m3u8
+#EXTINF:-1 tvg-id="dTVi.id@SD" group-title="TV Lokal",dTVi
+https://e.siar.us/live/dtvi.m3u8
+#EXTINF:-1 tvg-id="DutaTV.id@SD" group-title="TV Lokal",Duta TV (tidak 24 jam)
+https://dutatv.siar.us/dutatv/live/playlist.m3u8
+#EXTINF:-1 tvg-id="EfarinaTV.id@SD" group-title="TV Lokal",Efarina TV
+#EXTVLCOPT:http-referrer=https://live.efarinatv.net/
+https://live.efarinatv.com/hls/bgtaufikganteng.m3u8
+#EXTINF:-1 tvg-id="FajarTV.id@SD" group-title="TV Lokal",Fajar TV (tidak 24 jam)
+http://122.248.43.242:1935/FAJARTV/_definst_/myStream/playlist.m3u8
+#EXTINF:-1 tvg-id="FajarTV.id@SD" group-title="TV Lokal",Fajar TV (tidak 24 jam)
+http://122.248.43.138:1935/ch27/myStream/playlist.m3u8
+#EXTINF:-1 tvg-id="FicomChannel.id@SD" group-title="TV Lokal",Ficom Channel
+https://v3.siar.us/ficomchannel/live/playlist.m3u8
+#EXTINF:-1 tvg-id="HumaBetangTV.id@SD" group-title="TV Lokal",Huma Betang TV (tidak 24 jam)
+https://v3.siar.us/humabetangtv/live/playlist.m3u8
+#EXTINF:-1 tvg-id="IAmChannel.id@SD" group-title="TV Lokal",I Am Channel
+#EXTVLCOPT:http-referrer=https://iamchannel.org/
+https://61146e7ab7a66.streamlock.net:8089/tes/1/chunklist.m3u8
+#EXTINF:-1 tvg-id="JambiTV.id@SD" group-title="TV Lokal",Jambi TV
+https://jambitv.globaldigitalcore.com/hls/sah5tu7Eiveepohyieyie3OoteL2anga.m3u8
+#EXTINF:-1 tvg-id="JambiTV.id@SD" group-title="TV Lokal",Jambi TV
+http://122.248.43.138:1935/ch23/myStream/playlist.m3u8
+#EXTINF:-1 group-title="TV Lokal",Javvapos
+http://122.248.43.138:1935/ch6/myStream/playlist.m3u8
+#EXTINF:-1 tvg-id="JawaPosTV.id@Jakarta" group-title="TV Lokal",Jawa Pos TV Jakarta
+http://122.248.43.242:1935/JAWAPOSTVJKT/_definst_/myStream/playlist.m3u8
+#EXTINF:-1 group-title="TV Lokal",Jawapos TV 1
+http://122.248.43.138:1935/ch6/myStream/chunklist_w1818250765.m3u8
+#EXTINF:-1 tvg-id="JogjaTV.id@SD" group-title="TV Lokal",Jogja TV (tidak 24 jam)
+https://stream.jogjatv.co.id/jtvlive/stream/index.m3u8
+#EXTINF:-1 tvg-id="JPMTV.id" group-title="TV Lokal",JPM TV
+http://122.248.43.138:1935/ch6/myStream/playlist.m3u8
+#EXTINF:-1 tvg-id="JTV.id@SD" group-title="TV Lokal",JTV
+http://122.248.43.242:1935/JTVSURABAYA/_definst_/myStream/playlist.m3u8
+#EXTINF:-1 tvg-id="JTV.id@SD" group-title="TV Lokal",JTV
+http://122.248.43.138:1935/ch2/myStream/playlist.m3u8
+#EXTINF:-1 group-title="TV Lokal",JTV 2
+http://122.248.43.138:1935/ch2/myStream/chunklist_w1946012755.m3u8
+#EXTINF:-1 tvg-id="JTV.id@Kediri" group-title="TV Lokal",JTV Kediri (tidak 24 jam)
+http://122.248.43.242:1935/JTVKEDIRI/_definst_/myStream/playlist.m3u8
+#EXTINF:-1 tvg-id="JTV.id@Madiun" group-title="TV Lokal",JTV Madiun
+http://122.248.43.242:1935/JTVMADIUN/_definst_/myStream/playlist.m3u8
+#EXTINF:-1 tvg-id="JTV.id@Madura" group-title="TV Lokal",JTV Madura (tidak 24 jam)
+http://122.248.43.242:1935/JTVMADURA/_definst_/myStream/playlist.m3u8
+#EXTINF:-1 tvg-id="JTV.id@Malang" group-title="TV Lokal",JTV Malang
+http://122.248.43.242:1935/JTVMALANG/_definst_/myStream/playlist.m3u8
+#EXTINF:-1 tvg-id="KilisuciTV.id@SD" group-title="TV Lokal",Kilisuci TV
+https://5bf7b725107e5.streamlock.net/kstv/kstv/playlist.m3u8
+#EXTINF:-1 tvg-id="LingkarTV.id@SD" group-title="TV Lokal",Lingkar TV
+https://lingkartv.my.id/hls/lingkartv.m3u8
+#EXTINF:-1 tvg-id="MadaniTV.id@SD" group-title="TV Lokal",Madani TV
+https://stream.asianastream.com/madani/madanitv.smil/playlist.m3u8
+#EXTINF:-1 tvg-id="MaduTV.id@SD" group-title="TV Lokal",Madu TV (tidak 24 jam)
+#EXTVLCOPT:http-referrer=https://madu.tv/live-streaming/
+https://re1.siar.us/madutv/hd720/playlist.m3u8
+#EXTINF:-1 tvg-id="MatrixTVYogyakarta.id@HD" group-title="TV Lokal",Matrix TV Yogyakarta
+#EXTVLCOPT:http-referrer=https://stream.matrixtv.id/
+https://stream.matrixtv.id/hls/0/stream.m3u8
+#EXTINF:-1 tvg-id="MBGTV.id@FHD" group-title="TV Lokal",MBG TV
+https://stream.convergen.co/mbg_stream/smil:mbStream.smil/playlist.m3u8
+#EXTINF:-1 tvg-id="MGSTV.id@SD" group-title="TV Lokal",MGSTV (tidak 24 jam)
+#EXTVLCOPT:http-referrer=https://mgstv.co.id/live-streaming/
+https://mgstv.siar.us/live/mgstv.m3u8
+#EXTINF:-1 tvg-id="MQTV.id@SD" group-title="TV Lokal",MQTV (tidak 24 jam)
+https://5bf7b725107e5.streamlock.net/mqtv/mqtv/playlist.m3u8
+#EXTINF:-1 tvg-id="MusicInformationChannel.id@SD" group-title="TV Lokal",Music Information Channel
+#EXTVLCOPT:http-referrer=https://mic-indo.com/live
+https://mic.siar.us/mic/live/mic.m3u8
+#EXTINF:-1 tvg-id="NusantaraTV.id@SD" group-title="TV Lokal",Nusantara TV
+https://nusantaratv.siar.us/nusantaratv/live/playlist.m3u8
+#EXTINF:-1 tvg-id="OnlineTVNusantara.id@SD" group-title="TV Lokal",Online TV Nusantara (tidak 24 jam)
+https://5bf7b725107e5.streamlock.net/onlinetvnusantara/onlinetvnusantara/playlist.m3u8
+#EXTINF:-1 tvg-id="PadangTV.id@SD" group-title="TV Lokal",Padang TV (tidak 24 jam)
+http://122.248.43.242:1935/PADANGTV/_definst_/myStream/playlist.m3u8
+#EXTINF:-1 tvg-id="PadangTV.id@SD" group-title="TV Lokal",Padang TV (tidak 24 jam)
+http://122.248.43.138:1935/ch16/myStream/playlist.m3u8
+#EXTINF:-1 group-title="TV Lokal",PAL TV
+http://122.248.43.138:1935/ch7/myStream/playlist.m3u8
+#EXTINF:-1 tvg-id="PONTV.id@SD" group-title="TV Lokal",PONTV
+http://122.248.43.242:1935/PONTV/_definst_/myStream/playlist.m3u8
+#EXTINF:-1 tvg-id="PONTV.id@SD" group-title="TV Lokal",PONTV
+http://122.248.43.138:1935/ch15/myStream/playlist.m3u8
+#EXTINF:-1 tvg-id="PujaTVAceh.id@SD" group-title="TV Lokal",Puja TV Aceh (tidak 24 jam)
+#EXTVLCOPT:http-referrer=https://www.pujatvaceh.com/
+https://pujatv.siar.us/live/pujatv.m3u8
+#EXTINF:-1 tvg-id="RadarLampungTV.id@SD" group-title="TV Lokal",Radar Lampung TV
+#EXTVLCOPT:http-referrer=https://radartvnews.com/live-streaming/
+https://www.streaming.radartv.co.id/hls/test.m3u8
+#EXTINF:-1 tvg-id="RadarTasikmalayaTV.id@SD" group-title="TV Lokal",Radar Tasikmalaya TV (tidak 24 jam)
+https://v2.siar.us/radartasikmalaya/live/playlist.m3u8
+#EXTINF:-1 group-title="TV Lokal",Radar TV
+http://122.248.43.138:1935/ch17/myStream/playlist.m3u8
+#EXTINF:-1 group-title="TV Lokal",Radio 51 TV
+http://59d7d6f47d7fc.streamlock.net/canale51/canale51/playlist.m3u8
+#EXTINF:-1 tvg-id="RBTVJogja.id@SD" group-title="TV Lokal",RBTV Jogja (tidak 24 jam)
+#EXTVLCOPT:http-referrer=https://official.rbtvjogja.tv/live.php
+https://official.rbtvjogja.tv/live/mychannel.m3u8
+#EXTINF:-1 tvg-id="RCTV.id@SD" group-title="TV Lokal",RCTV (tidak 24 jam)
+http://122.248.43.138:1935/ch9/myStream/playlist.m3u8
+#EXTINF:-1 tvg-id="RCTV.id@SD" group-title="TV Lokal",RCTV (tidak 24 jam)
+#EXTVLCOPT:http-referrer=https://www.radarcirebon.tv/livestreaming/
+https://v10.siar.us/rctv/live/playlist.m3u8
+#EXTINF:-1 tvg-id="RiauTV.id@SD" group-title="TV Lokal",Riau TV (tidak 24 jam)
+http://122.248.43.242:1935/RIAUTV/_definst_/myStream/playlist.m3u8
+#EXTINF:-1 tvg-id="RiauTV.id@SD" group-title="TV Lokal",Riau TV (tidak 24 jam)
+http://122.248.43.138:1935/ch11/myStream/playlist.m3u8
+#EXTINF:-1 tvg-id="RinjaniTV.id@SD" group-title="TV Lokal",Rinjani TV
+https://rinjanitv.cloud/hls/tvkabel.m3u8
+#EXTINF:-1 tvg-id="SaliraTV.id@SD" group-title="TV Lokal",Salira TV
+https://live.salira.tv/p/3870/hybrid/play.m3u8
+#EXTINF:-1 tvg-id="SaliraTV.id@SD" group-title="TV Lokal",Salira TV
+https://live.salira.tv:3870/stream/play.m3u8
+#EXTINF:-1 tvg-id="SampitTV.id@SD" group-title="TV Lokal",Sampit TV (tidak 24 jam)
+https://sampit-tv.siar.us/live/sampit-tv.m3u8
+#EXTINF:-1 tvg-id="SelaparangTV.id@SD" group-title="TV Lokal",Selaparang TV (tidak 24 jam)
+#EXTVLCOPT:http-referrer=selaparangtv.net
+https://selaparangtv.siar.us/live/selaparangtv.m3u8
+#EXTINF:-1 tvg-id="Simpang5TV.id@SD" group-title="TV Lokal",Simpang5 TV (tidak 24 jam)
+http://122.248.43.242:1935/SIMPANG5TV/_definst_/myStream/playlist.m3u8
+#EXTINF:-1 tvg-id="Simpang5TV.id@SD" group-title="TV Lokal",Simpang5 TV (tidak 24 jam)
+http://122.248.43.138:1935/ch4/myStream/playlist.m3u8
+#EXTINF:-1 tvg-id="SMTV.id@SD" group-title="TV Lokal",SMTV (tidak 24 jam)
+http://122.248.43.242:1935/SMTV/_definst_/myStream/playlist.m3u8
+#EXTINF:-1 tvg-id="SMTV.id@SD" group-title="TV Lokal",SMTV (tidak 24 jam)
+http://122.248.43.138:1935/ch25/myStream/playlist.m3u8
+#EXTINF:-1 tvg-id="SMTV.id@SD" group-title="TV Lokal",SMTV (tidak 24 jam)
+#EXTVLCOPT:http-referrer=https://smtv.digital/
+https://e.siar.us/live/smtv.m3u8
+#EXTINF:-1 tvg-id="SriwijayaTV.id@SD" group-title="TV Lokal",Sriwijaya TV (tidak 24 jam)
+#EXTVLCOPT:http-referrer=sriwijayatv.tv
+https://sriwijayatv.siar.us/live/sriwijayatv.m3u8
+#EXTINF:-1 tvg-id="StaraTV.id@SumedangMajalengka" group-title="TV Lokal",Stara TV
+#EXTVLCOPT:http-referrer=https://stream.staratv.id/
+https://stream.staratv.id/hls/0/stream.m3u8
+#EXTINF:-1 tvg-id="StaraTV.id@Bandung" group-title="TV Lokal",Stara TV Bandung
+#EXTVLCOPT:http-referrer=https://bandung.staratv.id/
+https://bandung.staratv.id/hls/0/stream.m3u8
+#EXTINF:-1 tvg-id="StaraTV.id@Bojonegoro" group-title="TV Lokal",Stara TV Bojonegoro
+#EXTVLCOPT:http-referrer=https://bojonegoro.staratv.id/
+https://bojonegoro.staratv.id/hls/stream.m3u8
+#EXTINF:-1 tvg-id="StaraTV.id@Cianjur" group-title="TV Lokal",Stara TV Cianjur
+#EXTVLCOPT:http-referrer=https://cianjur.staratv.id/
+https://cianjur.staratv.id/hls/0/stream.m3u8
+#EXTINF:-1 tvg-id="StaraTV.id@Jakarta" group-title="TV Lokal",Stara TV Jakarta
+#EXTVLCOPT:http-referrer=https://jakarta.staratv.id/
+https://jakarta.staratv.id/hls/0/stream.m3u8
+#EXTINF:-1 tvg-id="StaraTV.id@Malang" group-title="TV Lokal",Stara TV Malang
+#EXTVLCOPT:http-referrer=https://malang.staratv.id/
+https://malang.staratv.id/hls/0/stream.m3u8
+#EXTINF:-1 tvg-id="StaraTV.id@Parahyangan" group-title="TV Lokal",Stara TV Parahyangan
+#EXTVLCOPT:http-referrer=https://parahyangan.staratv.id/
+https://parahyangan.staratv.id/hls/0/stream.m3u8
+#EXTINF:-1 tvg-id="STV.id@SD" group-title="TV Lokal",STV (tidak 24 jam)
+http://122.248.43.242:1935/SAMARINDATV/_definst_/myStream/playlist.m3u8
+#EXTINF:-1 tvg-id="SuaraSurabayaVisualRadio.id@Surabaya" group-title="TV Lokal",Suara Surabaya Visual Radio
+#EXTVLCOPT:http-referrer=https://www.suarasurabaya.net/
+https://ssfm.siar.us/ssfm/live/playlist.m3u8
+#EXTINF:-1 tvg-id="SultraTV.id@SD" group-title="TV Lokal",Sultra TV (tidak 24 jam)
+http://122.248.43.242:1935/SULTRATV/_definst_/myStream/playlist.m3u8
+#EXTINF:-1 tvg-id="TATV.id@SD" group-title="TV Lokal",TATV (tidak 24 jam)
+https://v2.siar.us/tatv/live.sdp/playlist.m3u8
+#EXTINF:-1 tvg-id="TegarTVLampung.id@SD" group-title="TV Lokal",Tegar TV Lampung
+https://5bf7b725107e5.streamlock.net/tegartv/tegartv/playlist.m3u8
+#EXTINF:-1 tvg-id="TegarTVLampung.id@SD" group-title="TV Lokal",Tegar TV Lampung
+http://wms.klikhost.com:1935/tegartv/tegartv/playlist.m3u8
+#EXTINF:-1 tvg-id="TheIndonesiaChannel.id@SD" group-title="TV Lokal",The Indonesia Channel
+https://restreamer.indonusa.id:8443/d5f4ad43-1b5a-4b0f-8bef-5b37224ed221.m3u8
+#EXTINF:-1 tvg-id="TVMu.id@SD" group-title="TV Lokal",TV Mu (tidak 24 jam)
+https://e.siar.us/live/tvmu.m3u8
+#EXTINF:-1 tvg-id="TVTabalong.id@SD" group-title="TV Lokal",TV Tabalong (tidak 24 jam)
+https://5bf7b725107e5.streamlock.net/tvtabalong/tvtabalong/playlist.m3u8
+#EXTINF:-1 tvg-id="TV9Nusantara.id@SD" group-title="TV Lokal",TV9 Nusantara
+https://5bf7b725107e5.streamlock.net/tv9/tv9/playlist.m3u8
+#EXTINF:-1 tvg-id="UChannel.id@SD" group-title="TV Lokal",U Channel
+#EXTVLCOPT:http-referrer=https://www.u-channel.tv
+https://srs.u-channel.tv/live/uchannel-tv.m3u8

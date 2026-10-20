@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=1920, height=1080, user-scalable=no">
+<title>TV Indonesia</title>
+<style>
+  :root {
+    --bg: #0b0f14;
+    --panel: rgba(12, 17, 24, 0.92);
+    --row: rgba(255, 255, 255, 0.04);
+    --focus: #f2b134;
+    --focus-text: #111;
+    --text: #eef1f5;
+    --muted: #8b96a5;
+    --red: #e5484d;
+    --green: #30a46c;
+    --yellow: #f2b134;
+    --blue: #3e8bff;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  html, body {
+    width: 100vw; height: 100vh; overflow: hidden;
+    background: var(--bg); color: var(--text);
+    font-family: "SamsungOne", "Samsung Sans", Roboto, Arial, sans-serif;
+  }
+  video {
+    position: fixed; inset: 0; width: 100vw; height: 100vh;
+    background: #000; object-fit: contain;
+  }
+
+  /* Panel daftar channel */
+  #panel {
+    position: fixed; top: 0; left: 0; bottom: 0; width: 34vw;
+    background: var(--panel);
+    display: flex; flex-direction: column;
+    transition: transform .25s ease;
+    border-right: 1px solid rgba(255,255,255,.06);
+  }
+  #panel.hidden { transform: translateX(-102%); }
+  #header { padding: 2.4vh 1.6vw 1.4vh; }
+  #title { font-size: 2.6vh; font-weight: 700; letter-spacing: .02em; }
+  #subtitle { font-size: 1.7vh; color: var(--muted); margin-top: .5vh; }
+  #filter {
+    display: inline-block; margin-top: 1vh; font-size: 1.6vh;
+    padding: .3vh .8vw; border-radius: 99px; background: rgba(255,255,255,.08);
+  }
+  #list { flex: 1; overflow: hidden; position: relative; padding: 0 .8vw; }
+  #listInner { position: absolute; left: .8vw; right: .8vw; top: 0; transition: top .12s linear; }
+  .ch {
+    height: 7.2vh; display: flex; align-items: center; gap: .9vw;
+    padding: 0 .9vw; margin-bottom: .6vh; border-radius: 1vh;
+    background: var(--row);
+  }
+  .ch .num { width: 3vw; font-size: 1.9vh; color: var(--muted); text-align: right; flex: none; }
+  .ch .logo {
+    width: 4.2vw; height: 5vh; flex: none; object-fit: contain;
+    background: rgba(255,255,255,.06); border-radius: .6vh;
+  }
+  .ch .meta { flex: 1; min-width: 0; }
+  .ch .name { font-size: 2.2vh; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+  .ch .group { font-size: 1.5vh; color: var(--muted); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; margin-top: .3vh; }
+  .ch .flags { flex: none; font-size: 2.2vh; display: flex; gap: .4vw; }
+  .ch .fav { color: var(--yellow); }
+  .ch .bad { color: var(--red); }
+  .ch.playing .name::before { content: "▶ "; color: var(--green); }
+  .ch.action { background: rgba(255,255,255,.09); }
+  .ch.action .num { font-size: 2.6vh; text-align: center; color: var(--text); }
+  .ch.focused { background: var(--focus); color: var(--focus-text); }
+  .ch.focused .num, .ch.focused .group { color: rgba(0,0,0,.65); }
+  .ch.focused .fav, .ch.focused .bad { color: var(--focus-text); }
+  .ch.focused.playing .name::before { color: var(--focus-text); }
+
+  #legend {
+    padding: 1.4vh 1.6vw 2.2vh; font-size: 1.5vh; color: var(--muted);
+    display: flex; flex-wrap: wrap; gap: .6vh 1.2vw;
+    border-top: 1px solid rgba(255,255,255,.06);
+  }
+  .k { display: inline-block; width: 1.4vh; height: 1.4vh; border-radius: 50%; vertical-align: -.15vh; margin-right: .3vw; }
+  .k.r { background: var(--red); } .k.g { background: var(--green); }
+  .k.y { background: var(--yellow); } .k.b { background: var(--blue); }
+
+  /* Info channel (OSD) */
+  #osd {
+    position: fixed; right: 3vw; top: 4vh;
+    background: var(--panel); border-radius: 1.4vh;
+    padding: 1.6vh 1.6vw; min-width: 22vw; max-width: 40vw;
+    opacity: 0; transition: opacity .3s ease;
+  }
+  #osd.show { opacity: 1; }
+  #osdNum { font-size: 4.2vh; font-weight: 700; color: var(--focus); }
+  #osdName { font-size: 2.6vh; margin-top: .4vh; }
+  #osdStatus { font-size: 1.7vh; color: var(--muted); margin-top: .6vh; }
+
+  /* Pesan tengah layar */
+  #message {
+    position: fixed; left: 50%; top: 50%; transform: translate(-50%, -50%);
+    background: var(--panel); border-radius: 1.4vh; padding: 2.4vh 2.4vw;
+    font-size: 2.2vh; text-align: center; max-width: 50vw; line-height: 1.5;
+    display: none;
+  }
+  #message.show { display: block; }
+  #message.withPanel { left: 67vw; }
+  #spinner {
+    width: 5vh; height: 5vh; margin: 0 auto 1.4vh; border-radius: 50%;
+    border: .6vh solid rgba(255,255,255,.15); border-top-color: var(--focus);
+    animation: spin 1s linear infinite; display: none;
+  }
+  #message.loading #spinner { display: block; }
+  @keyframes spin { to { transform: rotate(360deg); } }
+
+  #numEntry {
+    position: fixed; right: 3vw; bottom: 5vh; font-size: 7vh; font-weight: 700;
+    color: var(--focus); text-shadow: 0 .4vh 1.4vh rgba(0,0,0,.8); display: none;
+  }
+  #numEntry.show { display: block; }
+</style>
+</head>
+<body>
+  <video id="video" autoplay playsinline></video>
+
+  <div id="panel">
+    <div id="header">
+      <div id="title">TV Indonesia</div>
+      <div id="subtitle">Memuat daftar channel…</div>
+      <div id="filter">Semua channel</div>
+    </div>
+    <div id="list"><div id="listInner"></div></div>
+    <div id="legend">
+      <span>▲▼ pilih</span><span>OK putar</span><span>► tandai favorit</span>
+      <span>CH ▲▼ ganti channel</span><span>BACK sembunyikan/tampilkan daftar</span>
+      <span>Menu kategori &amp; favorit ada di atas daftar</span>
+    </div>
+  </div>
+
+  <div id="osd"><div id="osdNum"></div><div id="osdName"></div><div id="osdStatus"></div></div>
+  <div id="message"><div id="spinner"></div><div id="messageText"></div></div>
+  <div id="numEntry"></div>
+
+  <script src="hls.min.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
